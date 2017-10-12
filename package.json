@@ -1,54 +1,54 @@
 {
-  "name": "mongo-es",
-  "version": "2.0.0",
-  "description": "A MongoDB to Elasticsearch connector",
-  "keywords": [
-    "mongodb",
-    "elasticsearch",
-    "connector",
-    "etl"
-  ],
-  "main": "./dist/src/index.js",
-  "types": "./dist/src/index.d.ts",
-  "typings": "./dist/src/index.d.ts",
-  "scripts": {
-    "start": "node ./dist/src/main.js",
-    "build": "rm -rf ./dist && tsc",
-    "dev": "rm -rf ./dist && tsc -w & NODE_ENV=dev nodemon ./dist/src/main.js",
-    "test": "rm -rf ./dist && tsc && ava ./dist/test"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.com"
-  },
-  "bin": {
-    "mongo-es": "./dist/src/main.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jike-engineering/mongo-es.git"
-  },
-  "author": "",
-  "license": "MPL-2.0",
-  "bugs": {
-    "url": "https://github.com/jike-engineering/mongo-es/issues"
-  },
-  "homepage": "https://github.com/jike-engineering/mongo-es#readme",
-  "dependencies": {
-    "elasticsearch": "13.3.1",
-    "lodash": "4.17.4",
-    "mongodb": "2.2.31",
-    "rx": "4.1.0"
-  },
-  "devDependencies": {
-    "@types/elasticsearch": "5.0.16",
-    "@types/ioredis": "0.0.24",
-    "@types/lodash": "4.14.73",
-    "@types/mongodb": "2.2.10",
-    "@types/rx": "4.1.1",
-    "ava": "0.22.0",
-    "ioredis": "3.1.4",
-    "nodemon": "1.11.0",
-    "source-map-support": "0.4.16",
-    "typescript": "2.4.2"
-  }
+    "name": "mongo-es",
+    "version": "2.0.0",
+    "description": "A MongoDB to Elasticsearch connector",
+    "keywords": [
+        "mongodb",
+        "elasticsearch",
+        "connector",
+        "etl"
+    ],
+    "main": "./dist/src/index.js",
+    "types": "./dist/src/index.d.ts",
+    "typings": "./dist/src/index.d.ts",
+    "scripts": {
+        "start": "node ./dist/src/main.js",
+        "build": "rm -rf ./dist && tsc",
+        "dev": "rm -rf ./dist && tsc -w & NODE_ENV=dev nodemon ./dist/src/main.js",
+        "test": "rm -rf ./dist && tsc && ava ./dist/test"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.com"
+    },
+    "bin": {
+        "mongo-es": "./dist/src/main.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jike-engineering/mongo-es.git"
+    },
+    "author": "",
+    "license": "MPL-2.0",
+    "bugs": {
+        "url": "https://github.com/jike-engineering/mongo-es/issues"
+    },
+    "homepage": "https://github.com/jike-engineering/mongo-es#readme",
+    "dependencies": {
+        "elasticsearch": "13.3.1",
+        "lodash": "4.17.4",
+        "mongodb": "2.2.31",
+        "rx": "4.1.0"
+    },
+    "devDependencies": {
+        "@types/elasticsearch": "5.6.1",
+        "@types/ioredis": "0.0.24",
+        "@types/lodash": "4.14.73",
+        "@types/mongodb": "2.2.10",
+        "@types/rx": "4.1.1",
+        "ava": "0.22.0",
+        "ioredis": "3.1.4",
+        "nodemon": "1.11.0",
+        "source-map-support": "0.4.16",
+        "typescript": "2.4.2"
+    }
 }

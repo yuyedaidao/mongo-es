@@ -21,6 +21,7 @@ export default class MongoDB {
     MongoDB.dbs = {}
     const url = parse(mongodb.url)
     url.pathname = `/local`
+    console.log(url);
     MongoDB.dbs['local'] = await MongoClient.connect(format(url), mongodb.options)
     for (let task of tasks) {
       const url = parse(mongodb.url)
